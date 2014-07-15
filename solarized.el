@@ -782,28 +782,21 @@ customize the resulting theme."
         (,class (:foreground ,yellow-hc :background ,yellow-lc :weight bold :underline t))))
 ;;;;; flycheck
      `(flycheck-error
-       ((,(append '((supports :underline (:style wave))) class)
-         (:underline (:style wave :color ,red) :inherit unspecified))
+       ((,(append '((supports :underline (:style line))) class)
+         (:underline (:style line :color ,(if (eq variant 'light) red-l red)) :inherit unspecified))
         (,class (:foreground ,red-hc :background ,red-lc :weight bold :underline t))))
      `(flycheck-warning
-       ((,(append '((supports :underline (:style wave))) class)
-         (:underline (:style wave :color ,yellow) :inherit unspecified))
+       ((,(append '((supports :underline (:style line))) class)
+         (:underline (:style line :color ,(if (eq variant 'light) yellow-l yellow)) :inherit unspecified))
         (,class (:foreground ,yellow-hc :background ,yellow-lc :weight bold :underline t))))
      `(flycheck-info
-       ((,(append '((supports :underline (:style wave))) class)
-         (:underline (:style wave :color ,(if solarized-emphasize-indicators
-                                              blue base03)) :inherit unspecified))
+       ((,(append '((supports :underline (:style line))) class)
+         (:underline (:style line :color ,(if (eq variant 'light) blue-l blue)) :inherit unspecified))
         (,class (:foreground ,blue-hc :background ,blue-lc :weight bold :underline t))))
      `(flycheck-fringe-error
-       ((,class (:foreground ,(if solarized-emphasize-indicators
-                                  red-hc red)
-                             :background ,(if solarized-emphasize-indicators
-                                              red-lc base03) :weight bold))))
+       ((,class (:foreground ,(if (eq variant 'light) red-l red) :background unspecified :weight bold))))
      `(flycheck-fringe-warning
-       ((,class (:foreground ,(if solarized-emphasize-indicators
-                                  yellow-hc yellow)
-                             :background ,(if solarized-emphasize-indicators
-                                              yellow-lc base03) :weight bold))))
+       ((,class (:foreground ,(if (eq variant 'light) yellow-l yellow) :background unspecified :weight bold))))
      `(flycheck-fringe-info
        ((,class (:foreground ,(if solarized-emphasize-indicators
                                   blue-hc base01)
