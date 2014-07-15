@@ -396,33 +396,25 @@ customize the resulting theme."
      `(menu ((,class (:foreground ,base0 :background ,base03))))
      `(minibuffer-prompt ((,class (:foreground ,base0))))
      `(mode-line
-       ((,class (:inverse-video unspecified
-                                :overline ,s-mode-line-bg
-                                :underline ,s-mode-line-underline
-                                :foreground ,s-mode-line-fg
-                                :background ,s-mode-line-bg
-                                :box (:line-width 1 :color ,s-mode-line-bg
-                                                  :style unspecified)
-                                ))))
+       ((,class (:foreground ,s-mode-line-fg
+                 :background ,s-mode-line-bg
+                 :box (:line-width -1 :style released-button)
+                 ))))
      `(mode-line-buffer-id ((,class (:foreground ,s-mode-line-buffer-id-fg :weight bold))))
      `(mode-line-inactive
-       ((,class (:inverse-video unspecified
-                                :overline ,s-mode-line-inactive-bc
-                                :underline ,s-mode-line-underline
-                                :foreground ,s-mode-line-inactive-fg
-                                :background ,s-mode-line-inactive-bg
-                                :box (:line-width 1 :color ,s-mode-line-inactive-bg
-                                                  :style unspecified)
-                                ))))
-     `(header-line
-       ((,class (:inverse-video unspecified
-                                :overline nil
-                                :underline ,s-header-line-underline
-                                :foreground ,s-header-line-fg
-                                :background ,s-header-line-bg
-                                :box (:line-width 2 :color ,s-header-line-bg
-                                                  :style unspecified)
-                                ))))
+       ((,class (:foreground ,s-mode-line-inactive-fg
+                 :background ,s-mode-line-inactive-bg
+                 :box (:line-width -1 :style released-button)
+                 ))))
+     ;; `(header-line
+     ;;   ((,class (:inverse-video unspecified
+     ;;                            :overline nil
+     ;;                            :underline ,s-header-line-underline
+     ;;                            :foreground ,s-header-line-fg
+     ;;                            :background ,s-header-line-bg
+     ;;                            :box (:line-width 2 :color ,s-header-line-bg
+     ;;                                              :style unspecified)
+     ;;                            ))))
      `(region ((,class (:foreground ,base03 :background ,base1))))
      `(secondary-selection ((,class (:background ,base02))))
 
