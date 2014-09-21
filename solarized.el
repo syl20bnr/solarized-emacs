@@ -487,12 +487,12 @@ customize the resulting theme."
      `(ac-yasnippet-selection-face ((,class (:background ,yellow-lc :foreground ,yellow-hc))))
 ;;;;; auto highlight symbol
      `(ahs-definition-face ((,class (:foreground ,magenta :background unspecified
-                                                 :slant normal))))
-     `(ahs-edit-mode-face ((,class (:foreground ,base03 :background ,magenta))))
-     `(ahs-face ((,class (:foreground ,magenta :background unspecified))))
-     `(ahs-plugin-bod-face ((,class (:foreground ,magenta :background unspecified ))))
-     `(ahs-plugin-defalt-face ((,class (:foreground ,magenta :background unspecified))))
-     `(ahs-plugin-whole-buffer-face ((,class (:foreground ,magenta  :background unspecified))))
+                                                 :slant normal :weight bold))))
+     `(ahs-edit-mode-face ((,class (:foreground ,base03 :background ,magenta :weight bold))))
+     `(ahs-face ((,class (:foreground ,magenta :background unspecified :weight bold))))
+     `(ahs-plugin-bod-face ((,class (:foreground ,magenta :background unspecified :weight bold))))
+     `(ahs-plugin-defalt-face ((,class (:foreground ,magenta :background unspecified :weight bold))))
+     `(ahs-plugin-whole-buffer-face ((,class (:foreground ,magenta  :background unspecified :weight bold))))
      `(ahs-warning-face ((,class (:foreground ,red :weight bold))))
 ;;;;; android mode
      `(android-mode-debug-face ((,class (:foreground ,green))))
