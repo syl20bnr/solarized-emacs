@@ -400,7 +400,7 @@ customize the resulting theme."
                  :background ,s-mode-line-bg
                  :box (:line-width 1)
                  ))))
-     `(mode-line-buffer-id ((,class (:foreground ,s-mode-line-buffer-id-fg :weight bold))))
+     ;; `(mode-line-buffer-id ((,class (:foreground ,s-mode-line-buffer-id-fg :weight bold))))
      `(mode-line-inactive
        ((,class (:foreground ,s-mode-line-inactive-fg
                  :background ,s-mode-line-inactive-bg
