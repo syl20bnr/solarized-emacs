@@ -486,7 +486,7 @@ customize the resulting theme."
      `(ac-yasnippet-candidate-face ((,class (:background ,base02 :foreground ,yellow))))
      `(ac-yasnippet-selection-face ((,class (:background ,yellow-lc :foreground ,yellow-hc))))
 ;;;;; auto highlight symbol
-     `(ahs-definition-face ((,class (:foreground ,magenta :background unspecified
+     `(ahs-definition-face ((,class (:foreground ,magenta :background unspecified :underline t
                                                  :slant normal :weight bold))))
      `(ahs-edit-mode-face ((,class (:foreground ,base03 :background ,magenta :weight bold))))
      `(ahs-face ((,class (:foreground ,magenta :background unspecified :weight bold))))
