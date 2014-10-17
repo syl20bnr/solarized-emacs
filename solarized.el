@@ -398,13 +398,13 @@ customize the resulting theme."
      `(mode-line
        ((,class (:foreground ,s-mode-line-fg
                  :background ,s-mode-line-bg
-                 :box (:line-width 1)
+                 :box (:color ,s-mode-line-fg :line-width 1)
                  ))))
      ;; `(mode-line-buffer-id ((,class (:foreground ,s-mode-line-buffer-id-fg :weight bold))))
      `(mode-line-inactive
        ((,class (:foreground ,s-mode-line-inactive-fg
                  :background ,s-mode-line-inactive-bg
-                 :box (:line-width 1)
+                 :box (:color ,s-mode-line-inactive-fg :line-width 1)
                  ))))
      ;; `(header-line
      ;;   ((,class (:inverse-video unspecified
